@@ -1,0 +1,410 @@
+<HTML>
+<HEAD><TITLE>Animal QTL Database</title>
+<!-- To be read into <head> section of the pages -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJJLC3GGPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KJJLC3GGPT');
+</script>
+
+
+   <META NAME="AUTHOR" CONTENT="Zhiliang Hu">
+   <META NAME="description" CONTENT="Livestock animals, Cattle, Chicken, Horse, Rainbow trout, Pigs, and Sheep QTL database">
+   <META NAME="keywords" CONTENT="QTL,map,database,pig,swine,porcine,bovine,cattle,cow,chicken,genome,quantitative traits,QTL,copy number variations,CNV,genome wide associations,GWAS,genes,SNP">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="/default/style.css" MEDIA=screen>
+<STYLE TYPE="text/css"><!--
+TD     { font-size:11pt; color:navy; text-align: justify;
+         font-family:verdana,Georgia,Tahoma,Geneva,arial,helvetica; }
+TD.aa  { text-align:right; color:#fff; font-size:8pt; letter-spacing:0.06em;
+         transform:scaleY(1.3); }
+TD.ab  { text-align:left; color:#fff; font-size:8pt; letter-spacing:0.13em;
+         transform:scaleY(1.3); }
+TD.ac  { font-weight:600; color:#efefef; letter-spacing:0.03em; padding:10 6 8 6px;
+         font-size:9pt; transform:scaleY(1.7); }
+TD.ba  { padding:12 0px; }
+TD.bv  { padding:8 0px; }
+TD.top { vertical-align:top; }
+DIV.fon { font-size:8pt;font-family:verdana;font-weight:600; }
+H3     { text-shadow:#667788 0.01em 0.01em 2px;margin:0; }
+P.i    { text-indent:20pt; }
+A.em   { font-style:italic; font-weight:400; }
+B.b    { color:#04f; }
+B.c    { color:#818; }
+B.d    { color:#066; }
+B.e    { color:#08e; }
+B.f    { color:#a60; }
+IMG.c  { border:0; min-width:38px; height:auto;}
+IMG.yrs { position:absolute; top:5px; left:520px; width:230px; height:140px; border:none; opacity:0.6; }
+IMG.yrs:hover { left:430px; width:300px; height:240px; opacity:1.0; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+<!-- popup text script starts --------- -->
+<script type="text/javascript" src="/share/popuptxt/wz_tooltip.js"></script>
+<!-- popup text script ends ----------- -->
+
+
+<TABLE border='0' cellspacing='0' cellpadding='10' style='width:98%;margin:1px auto;'>
+<TR><TD colspan=2 style="BACKGROUND-image:url('/QTLdb/images/titlebar_bg.jpg');padding:0;">
+ <div style="line-height:1.0em;border-radius:0.3em 0.3em;border:2px groove #8ea0ff;width:108px;text-align:center;float:right;background-color:#fff0f5;margin:0;"><a href="/QTLdb/release/56"><span style="font-family:verdana,tahoma;font-size:9pt;color:#964; font-weight:600;">Release 56</span><BR><span style="font-size:8pt;color:#964;font-weight:100;">(Apr 24, 2025)</span></a></div>
+</TD></TR>
+</TABLE>
+
+<TABLE border='0' cellspacing='0' cellpadding='0' style='width:850px;margin:1px auto'>
+<TR><TD colspan='2'>
+ <img border='0' style='margin:23 0px;' src="/QTLdb/images/animalQTLdb.gif">
+</TD></TR>
+<TR><TD class='bv'>
+<P class="i">
+The Animal Quantitative Trait Loci (QTL) Database (Animal QTLdb) strives to 
+collect all publicly available trait mapping data, <i>i.e.</i> QTL
+(phenotype/expression, eQTL), candidate gene and association data (GWAS), 
+and copy number variations (CNV) mapped to livestock animal genomes, in 
+order to facilitate locating and comparing discoveries within and between 
+species.  New data and database tools are continually developed to align 
+various trait mapping data to map-based genome features such as annotated 
+genes.
+
+<P class="i">
+Many scientific journals require or recommend that any original 
+QTL/association data be deposited into a public database before a paper may 
+be accepted for publication.  We provide user/curator accounts for direct 
+data submission, and in return we supply users with a data summary link to 
+facilitate the manuscript review process.
+</P>
+</TD><TD style="text-align:center;vertical-align:top;padding:16 0 10 12px;width:180px;" rowspan='2'>
+  <table border='0' style="background-color:#607f94;width:100%;border-radius:0.3em 0.3em;">
+  <tr><td colspan='2' class='ac'>
+    Database highlights
+   </td></tr>
+  <tr><td class="aa">Publications:</td><td class="ab">2,964</td><tr>
+  <tr><td class="aa">Species:</td><td class="ab">7</td><tr>
+  <tr><td class="aa">Genome maps:</td><td class="ab">22</td><tr>
+  <!-- <tr><td class="aa">Linkage maps:</td><td class="ab">11</td><tr> -->
+  <tr><td class="aa">Measured traits:</td><td class="ab">1,584</td><tr>
+  <tr><td class="aa">QTL/associations:</td><td class="ab">292,423</td><tr>
+  <tr><td colspan='2' style='height:5px'></td><tr>
+  <tr><td colspan='2' class='ba' style="background-image:url('/icons/fean-bar.jpg');">
+   <img src="/icons/misc/dataliance.png">
+   <a onMouseOver="Tip('<img src=/icons/links/ncbi_l.jpg>',BORDERWIDTH,2)" onMouseOut="UnTip()" href="http://www.ncbi.nlm.nih.gov/"><img style="height:20px;margin:0px;margin-bottom:-8px;" src="/icons/links/ncbi_l.png"></a>
+   <a onMouseOver="Tip('<img src=/icons/links/DCI_logo.png>',BORDERWIDTH,2)" onMouseOut="UnTip()" href="http://wokinfo.com/products_tools/multidisciplinary/dci/"><img style="height:36px;margin:0px;" src="/icons/links/tr_logo.png"></a>
+   <a onMouseOver="Tip('<img src=/icons/links/UCSClogo.png>',BORDERWIDTH,2)" onMouseOut="UnTip()" href="http://genome.ucsc.edu/"><img style="margin-left:6px;margin-top:2px;" src="/icons/links/ucsc.png"></a>
+   <a onMouseOver="Tip('<img src=/icons/links/ens_logo.png>',BORDERWIDTH,2)" onMouseOut="UnTip()" href="http://www.ensembl.org"><img style="height:;margin-top:-7;" align=right src="/icons/links/ens_logo.png"></a>
+  <tr><td colspan='2' class='ba' style="text-align:center;background-color:#607f94">
+<!-- #-- positioning does not work well when the page is centered --#
+    <div class='fon' style="position:relative;left:668px;top:286px;color:#abe;">CNV</div>
+    <div class='fon' style="position:relative;left:663px;top:351px;color:#57a;">Traits</div>
+    <div class='fon' style="position:relative;left:661px;top:440px;color:#980;">GWAS</div>
+ -->
+    <span style="width:158px;height:60px;background-position:0 -40px;display:inline-block;border:0;background-image:url('/QTLdb/images/CNV.png');margin-top:9px;"></span>
+    <span style="width:158px;height:100px;background-position:0 -3px;display:inline-block;border:0;background-image:url('/QTLdb/images/overvanm.gif');"></span>
+    <div style="padding-left:18px;"><img src="/QTLdb/images/gwas.jpg"></div>
+    <img style="margin:0 0 3 0px;border:0;" src="/QTLdb/images/overview.gif">
+    <div style="margin:3px;line-height:0.7em;transform:scaleY(1.3);">
+     <a style="font-size:7pt;color:#d0d0d0;" href="http://rgd.mcw.edu">
+     This graph is partly adopted from<BR>the RGD with kind permission</a>
+    </div>
+  </td><tr></table>
+<div style='font-size:8.5pt;text-align:left;margin:20 2px;line-height:1.5em;'>
+<a style='color:#479;font-family:sans-serif,arial;' href="/QTLdb/lot/hitmap">
+Last 30 days visitor activities:
+ <LI><span style="margin-left:-4px;">3,605,126 visitors, who made</span></LI>
+ <LI><span style="margin-left:-4px;">34,356,194 hits, which generated</span></LI>
+ <LI><span style="margin-left:-4px;">313.62 GB data downloads</span></LI>
+</a>
+</div>
+</TD></TR>
+<TR><TD class='bv' style='background-image:url("/QTLdb/images/pig_QTL_bg2a.jpg");'>
+
+<table border='0' cellspacing='0' cellpadding='6' style='margin:3 12 6 3px'>
+<tr><td style='vertical-align:top;'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/cattle/"><h3>Cattle QTL</h3></a>
+There are <B class='b'>193,453</B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'>1,206</B> publications.
+These data are lifted to <B class='c'>5</B> genome builds.
+The curated data represent <B class='d'>558</B> different base traits and
+<B class='e'>417</B> trait variants. (see <a 
+href="/cgi-bin/QTLdb/BT/summary"><B>cattle data summary</B></a> for more 
+details).
+</td></tr>
+<!--
+<tr><td class='top'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/catfish"><h3>Catfish QTL</h3></a>
+There are <B class='b'></B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'></B> publications.
+These data are lifted to <B class='c'></B> genome builds.
+The curated data represent <B class='d'></B> different base traits and
+<B class='e'></B> trait variants.
+(see <a href="/cgi-bin/QTLdb/IP/summary"><B>catfish data summary</B></a> 
+for more details).
+</td></tr>
+-->
+<tr><td class='top'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/chicken/"><h3>Chicken QTL</h3></a>
+There are <B class='b'>29,116</B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'>416</B> publications.
+These data are lifted to <B class='c'>4</B> genome builds.
+The curated data represent <B class='d'>246</B> different traits and
+<B class='e'>246</B> trait variants.
+(see <a href="/cgi-bin/QTLdb/GG/summary"><B>chicken data summary</B></a> 
+for more details).
+</td></tr>
+
+<tr><td class='top'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/goat/"><h3>Goat QTL</h3></a>
+There are <B class='b'>2713</B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'>47</B> publications.
+These data are lifted to <B class='c'>2</B> genome builds.
+The curated data represent <B class='d'>90</B> different base traits and
+<B class='e'>120</B> trait variants.
+(see <a href="/cgi-bin/QTLdb/CH/summary"><B>goat data summary</B></a> for more details).
+</td></tr>
+
+<tr><td class='top'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/horse/"><h3>Horse QTL</h3></a>
+There are <B class='b'>2,482</B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'>129</B> publications.
+These data are lifted to <B class='c'>2</B> genome builds.
+The curated data represent <B class='d'>71</B> different base traits and
+<B class='e'>14</B> trait variants.
+(see <a href="/cgi-bin/QTLdb/EC/summary"><B>horse data summary</B></a> for 
+more details).
+</td></tr>
+
+<tr><td class='top'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/pig/">
+<h3>Pig QTL</h3></a>
+There are <B class='b'>57,041</B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'>854</B> publications.
+These data are lifted to <B class='c'>3</B> genome builds.
+The curated data represent <B class='d'>406</B> different base traits and
+<B class='e'>1088</B> trait variants.
+(see <a href="/cgi-bin/QTLdb/SS/summary"><B>pig data summary</B></a> for 
+more details).
+</td></tr>
+
+<tr><td class='top'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/rainbow_trout">
+<h3>Rainbow Trout QTL</h3></a>
+There are <B class='b'>2,201</B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'>23</B> publications.
+These data are lifted to <B class='c'>2</B> genome builds.
+The curated data represent <B class='d'>35</B> different base traits and
+<B class='e'>6</B> trait variants.
+(see <a href="/cgi-bin/QTLdb/OM/summary"><B>rainbow trout data 
+summary</B></a> for more details).
+</td></tr>
+
+<tr><td class='top'><img class='c' src="/icons/cruse-transp.png"></td>
+<td><a href="/QTLdb/sheep/">
+<h3>Sheep QTL</h3></a>
+There are <B class='b'>5,417</B> currently released QTL data (including 
+eQTL/SNP associations) curated from <B class='f'>289</B> publications.
+These data are lifted to <B class='c'>4</B> genome builds.
+The curated data represent <B class='d'>178</B> different base traits and
+<B class='e'>264</B> trait variants.
+(see <a href="/cgi-bin/QTLdb/OA/summary"><B>sheep data summary</B></a> for 
+more details).
+</td></tr>
+</table>
+</TD></TR>
+
+<TR><TD colspan='2' class='bv' style="line-height:1.1em;">
+<img style="margin:6 0 20 0px;width:100%;height:8px;" src="/icons/lookline.gif"><br>
+<img style="border:0;margin:0 0 0 16px;" align=right width='170' src="/icons/links/JBrowseLogo_small.png">
+<img style="border:0;margin:0 15 0 0px;height:44px;width:48px" align=left src="/icons/links/jbrowse2.png">
+<B>QTL on JBrowse</B>: 
+Released QTL/association data aligned on supported genome assemblies can be viewed on JBrowse2. Links to these data are under "Maps views" on each QTLdb species home page.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<img style="margin:0 15 12 5;height:50px;width:42px" align='left' src="/icons/misc/gseqmap2.png">
+<a href="/QTLdb/doc/genome_versions"><B>Supported maps:</B></a> 
+Currently, there are <a href="/QTLdb/doc/genome_versions"><B class='b'>22</B> 
+genome assemblies (aka. "builds", "maps")</a> supported on the Animal QTLdb for
+data curation and curated data lifts. Among them,  one per species the most 
+accepted/updated assembly is designated as the <I>default reference</I> for
+data browse on JBrowse.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<img style="margin:0 10 0 30px;" border='0' align='right' src="/icons/misc/apicons.png">
+<a href="/QTLdb/API"><img style="margin:0 15 16 8;width:38px;height:38px" border='0' align='left' src="/icons/misc/linkio.png">
+<a href="/QTLdb/API"><B>API</B></a> and <a href="/QTLdb/doc/xref"> 
+<code><B>dbxref</B></code></a>: Scriptable access to the Animal QTLdb using 
+a REpresentational State Transfer (REST) protocol, and <code>dbxref</code> 
+links into the database for extended information.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<img style="margin:0 12 10 5;height:45px;width:40px" align='left' src="/icons/misc/datallia.png">
+<a href="/QTLdb/doc/alliances">
+<B>Data Alliances:</B></a> All released QTL/association data are ported to our data alliances: 
+<a class='em' href="http://www.ensembl.org">Ensembl</a>,
+<a class='em' href="https://monarchinitiative.org/">Monarch Project</a>,
+<a class='em' href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene">NCBI Entrez GeneDB</a>, 
+<a class='em' href="http://wokinfo.com/products_tools/multidisciplinary/dci/">Reuters Data Citation Index</a>, and 
+<a class='em' href="http://genome.ucsc.edu/cgi-bin/hgGateway">UCSC</a>.
+Users can employ tools on their sites to extend your information mining.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<a href="/QTLdb/doc/download">
+<img style="margin:0 12 20 10;height:40px;width:36px" align=left src="/icons/misc/cloud-download.png">
+<B>Data Downloads:</B></a>
+Batch data download options are on each species main pages. In addition
+there are customized search/download options on each chromosome page. The 
+default data format is tab-delimited text, while alternative formats include
+GFF, BAM, and BED.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<a href="/QTLdb/archive_legacy.data">
+<img style="margin:0 12 20 10;height:40px;width:36px" align=left src="/icons/general/archives.png">
+<B>Legacy Data Archive:</B></a>
+Permanent deposition of traditional linkage-map-based QTL data curated 
+into the Animal QTLdb during 1999 and 2021. The utility of such data 
+are diminishing since sequence-based genome maps and SNP-based analysis 
+took the stage moving forward.
+
+<div style="text-align:right;">
+<img style="margin:16 0 6 0px;width:100%;height:8px;" src="/icons/lookliner.gif">
+</div>
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<a href="/QTLdb/app">
+<img style="margin:0 16 40 10;" border='0' align=left src="/QTLdb/images/curation.png">
+<B>Curator / Editor Tools:</B></a> You can register for a free curator 
+account to directly get your data into the database. Once your curator's 
+account is granted, you can find a step-by-step curation guide to help 
+you proceed, for manual data entry or for batch data upload.  You can keep 
+your data in private status until a time when you wish to make it public.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<img style="margin:0 16 40 10;" border="0" align=left src="/icons/datainput.png">
+<a href='/QTLdb/doc/batchdata'><B>Batch Data Submission:</B></a> A useful 
+alternative to curate large amounts of data is to upload them in batches 
+for our team to help out with a streamlined process. Prepare your data in 
+required formats described in the <a href='/QTLdb/doc/minfo'>Minimum Required 
+Information Guideline</a> in <a href='/QTLdb/doc/batchdata'>three simple steps</a>
+to proceed.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<a href="/QTLdb/doc/videotut">
+<img border='0' align=left style="margin:0 16 0 10;width:32px;hight:54px" src="/icons/general/videotut.gif">
+<B>Video Tutorials</B>:</a> Video tutorials to show how to use newly developed 
+database tools to access and analyze information stored in the Animal QTLdb.
+</TD></TR>
+
+<TR><TD colspan='2' class='bv'>
+<a href="/QTLdb/faq">
+<img border='0' align=left style="margin:0 16 10 10;width:32px;hight:54px" src="/icons/misc/Q-A.s.jpg">
+<B>Frequently Asked Questions:</B></a> A general user's guide in forms of 
+questions and answers addressing common questions such as how to access 
+data, often related with various web tools, functions, access points and/or 
+routes to get to certain data, etc.
+<p>&nbsp;</p>
+</TD></TR>
+
+<TR><TD colspan='2' style='border-top:1px solid #c9a;padding:5 0px;'>
+<B><a href="/QTLdb/publications">REFERENCES:</a></B>
+<DIV style="margin-bottom:10px;padding:5 5 5 16px;border:0px;font-size:9pt;
+ text-indent:-1.2em;width:100%;height:43px;overflow:auto;width:98%;line-height:1.3em">
+Zhi-Liang Hu, Carissa A. Park, and James M. Reecy (2022). <a href="https://academic.oup.com/nar/article/50/D1/D956/6437998"><B>Bringing
+the Animal QTLdb and CorrDB into the future: meeting new challenges and providing
+updated services</B></a>. <I>Nucleic Acids Research, Volume 50, Issue D1, Pages D956–D961</I>.
+DOI: <a href="https://doi.org/10.1093/nar/gkab1116">10.1093/nar/gkab1116</a>
+<P>
+Zhi-Liang Hu, Carissa A. Park, and James M. Reecy (2019). <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gky1084/5165267?guestAccessKey=ea63e53b-24cf-4ee7-923f-2e919184b8a6"><B>Building
+a livestock genetic and genomic information knowledgebase through integrative developments
+of Animal QTLdb and CorrDB</B></a>. <I>Nucleic Acids Research, Volume 47, Issue D1,
+8 January 2019, Pages D701–D710</I>. DOI: <a href="https://doi.org/10.1093/nar/gky1084">10.1093/nar/gky1084</a>
+<P>
+Zhi-Liang Hu, Carissa A. Park, and James M. Reecy (2018).  <a href="/QTLdb/publications/2018WCGALP.pdf"><B>Development
+of Animal QTLdb and CorrDB: Resynthesizing Big Data to Improve Meta-analysis of Genetic
+and Genomic Information</B></a>. <I>The 11th World Congress on Genetics Applied to
+Livestock Production (WCGALP). New Zealand, February 11-16, 2018.</I>
+<P>
+Zhi-Liang Hu, Carissa A. Park and James M. Reecy (2016). <a href="http://nar.oxfordjournals.org/content/44/D1/D827"><B>Developmental
+progress and current status of the Animal QTLdb</B></a>. <I>Nucleic Acids Research,
+44 (D1): D827-D833</I>. DOI: <a href="https://dx.doi.org/10.1093/nar/gkv1233">10.1093/nar/gkv1233</a>
+<P>
+Zhi-Liang Hu, Carissa A. Park, Xiao-Lin Wu and James M. Reecy (2013). <a href="http://nar.oxfordjournals.org/content/41/D1/D871.full"><B>Animal
+QTLdb: an improved database tool for livestock animal QTL/association data dissemination
+in the post-genome era</B></a>. <I>Nucleic Acids Research, 41 (D1): D871-D879</I>;
+DOI: <a href="https://dx.doi.org/10.1093%2Fnar%2Fgks1150">10.1093/nar/gks1150</a>
+<P>
+Zhi-Liang Hu, Carissa A. Park, Eric R. Fritz and James M. Reecy (2010). <a href="/QTLdb/publications/2010WCGALP.pdf"><B>QTLdb:
+A Comprehensive Database Tool Building Bridges between Genotypes and Phenotypes</B></a>.
+<I>Invited Lecture with full paper published electronically on The 9th World Congress
+on Genetics Applied to Livestock Production (WCGALP). Leipzig, Germany August 1-6,
+2010</I>.
+<P>
+Zhi-Liang Hu and James M. Reecy (2007). <a href="https://doi.org/10.1007/s00335-006-0105-8"><B>Animal
+QTLdb: beyond a repository - A Public Platform for QTL Comparisons and Integration
+with Diverse Types of Structural Genomic Information</B></a>. <I>Mammalian Genome,
+Volume 18(1), 1-4 (2007)</I>. DOI: <a href="https://doi.org/10.1007/s00335-006-0105-8">10.1007/s00335-006-0105-8</a>
+<P>
+Zhi-Liang Hu, Eric Ryan Fritz and James M. Reecy (2007).  <a href="https://doi.org/10.1093/nar/gkl946"><B>AnimalQTLdb:
+a livestock QTL database tool set for positional QTL information mining and beyond</B></a>.
+<I>Nucleic Acids Research, 2007, 35 (Database issue):D604-D609</I>.
+<P>
+</DIV>
+</TD></TR>
+</TABLE>
+
+<div style="border-top:1px solid #4876FF; margin:30 0px; width:98%; padding:6 0 9 0px;">
+<img style="margin:-3 16 0 10;" border='0' align=left src="/icons/links/link.jpg">
+<a><B>Related resources:</B></a>
+&nbsp;&nbsp;&nbsp;<img src="/icons/di-blue.gif">&nbsp;&#183;&nbsp;
+<a target="_NEW" href="/bioinfo/projects/vt/">VT</a> |
+<a target="_NEW" href="/bioinfo/projects/lpt/">LPT</a> |
+<a target="_NEW" href="/bioinfo/projects/lbo/">LBO</a> |
+<a target="_NEW" href="/bioinfo/projects/cmo/">CMO</a>
+&nbsp;&#183;&nbsp;<img src="/icons/di-purple.gif">&nbsp;&#183;&nbsp;
+<a target="_NEW" href="http://miqas.sourceforge.net/">MIQAS</a> 
+&nbsp;&#183;&nbsp;<img src="/icons/di-green.gif">&nbsp;&#183;&nbsp;
+<a target="_NEW" href="https://fairsharing.org/MIBBI">MIBBI</a> <!-- http://www.mibbi.org/ -->
+&nbsp;&#183;&nbsp;<img src="/icons/di-red.gif">&nbsp;&#183;&nbsp;
+<a target="_NEW" href="http://en.wikipedia.org/wiki/Minimum_Information_Standards">MI</a> 
+&nbsp;&#183;&nbsp;<img src="/icons/di-yellow.gif">&nbsp;&#183;&nbsp;
+<a target="_NEW" href="/CorrDB">CorrDB</a>
+&nbsp;&#183;&nbsp;<img src="/icons/di-green.gif">&nbsp;&nbsp;&nbsp;
+</div>
+
+<P style='padding:40px'>&nbsp;</P> 
+<TABLE border='0' cellpadding='0' cellspacing='0' style="border-top:1px solid #999;width:100%;position:fixed;bottom:0;background-color:#fff">
+<TR><TD style='vertical-align:top;width:72px;padding:3px' rowspan='2'>
+ <a target=new href="/default/copyright.QTLdb.php" onClick="window.open('/default/copyright.QTLdb.php','myWin','toolbar=no,directories=no,location=no,status=no,menubar=no,resizable=yes,scrollbars=yes,left=700,top=80,width=620,height=550'); return false">
+  <img border=0 style='margin:0;height:40px' src="/icons/links/creativecomm.png">
+ </a>
+</TD><TD style='vertical-align:top;padding:4 0 0 3px;text-align:left;color:red;
+         font-family:verdana,helvetica,sans-serif;font-size:.65em;line-height:1.5em'>
+ &#169; 2003-2025:
+ <a target="_NEW" href="/default/info" style='font-weight:400'>
+ USA &#183; USDA &#183; NRPSP8 &#183; Program to Accelerate Animal Genomics Applications</a>.
+ <nobr>Contact: <a href="#" onclick="submitGiddenForm();return false;">Bioinformatics Team</a></nobr>
+</TD>
+<TD colspan='2' style='vertical-align:bottom;text-align:right;'>
+<div class='inlblk1' style='float:right'><a onMouseOver="Tip('<table><tr><td><img src=/icons/I-call90.gif></td><td valign=top style=font-size:.5em;font-weight:bold;color:#ff1493;>Help<BR>Desk</td></tr></table>', FONTSIZE, '13pt', BGCOLOR, '#ffffff', FADEIN, 400, SHADOW, true, SHADOWCOLOR, '#BDc76B', BORDERWIDTH, 8, BORDERCOLOR, '#87ceff')" onMouseOut="UnTip()" href="#" onclick="submitGiddenForm();return false;"><img style='text-decoration:none;padding:1 20px' src="/icons/general/helpdesk.jpg"></a><BR><img border=0 src="/icons/misc/baseline.jpg"></div>
+</TD></TR>
+</TABLE>
+<form method="post" name='jh9v' action="/bioinfo/services/helpdesk/" id="denForm" style="display:none;">
+    <input type="hidden" name='subj' value='/cgi-bin/QTLdb/index'>
+</form>
+<script>
+   function submitGiddenForm() {
+      document.getElementById("denForm").submit();
+   }
+</script>
+</body>
+</html>
